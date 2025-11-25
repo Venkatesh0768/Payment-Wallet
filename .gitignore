@@ -1,0 +1,21 @@
+# Java / Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+**/target/
+*.log
+
+# Node
+node_modules/
+.next/
+dist/
+
+# OS
+.DS_Store
+
+# Secrets
+.env
+.env.local
+
+# Docker
+docker-compose.override.yml
+EOF
