@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: userservice
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: ${SPRING_JPA_HIBERNATE_DDL_AUTO:update}
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  sql:
+    init:
+      mode: ${SPRING_SQL_INIT_MODE:never}
+  boot:
+    admin:
+      client:
+        url: http://localhost:1414/
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://eureka-server:8761/eureka/}
+  instance:
+    prefer-ip-address: true
+
+
+
+#  spring.boot.admin.client.url=http://localhost:1414/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
