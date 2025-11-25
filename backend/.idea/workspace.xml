@@ -5,30 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c426d555-bf41-4fe1-860d-309c49b2b67f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/org/paymentwallet/userservice/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/org/venkatesh/userservice/UserServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/test/java/org/venkatesh/userservice/UserServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/org/venkatesh/eurekaserver/EurekaServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/test/java/org/venkatesh/eurekaserver/EurekaServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/org/paymentwallet/userservice/Exception/GobalExpection.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/org/paymentwallet/userservice/Exception/GobalExpection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/org/paymentwallet/userservice/Exception/UserAlreadyExistException.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/org/paymentwallet/userservice/Exception/UserNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/org/paymentwallet/userservice/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/org/paymentwallet/userservice/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/org/paymentwallet/userservice/dto/UserRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/org/paymentwallet/userservice/dto/UserRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/org/paymentwallet/userservice/model/BaseModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/org/paymentwallet/userservice/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/org/paymentwallet/userservice/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/org/paymentwallet/userservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/org/paymentwallet/userservice/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/org/paymentwallet/userservice/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/org/paymentwallet/userservice/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +27,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Exception" />
         <option value="Class" />
       </list>
     </option>
@@ -57,10 +49,10 @@
     &quot;accountId&quot;: &quot;202b3501-4003-462b-add9-7768dbb35911&quot;
   }
 }</component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
@@ -95,6 +87,11 @@
     "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -114,87 +111,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Docker.user-service">
-    <configuration name="AdminServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="admin-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.venkatesh.adminserver.AdminServerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="eureka-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.venkatesh.eurekaserver.EurekaServerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="UserService" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.venkatesh.userservice.UserServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="admin-server" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="imageTag" value="admin-server" />
-          <option name="containerName" value="admin-server" />
-          <option name="portBindings">
-            <list>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="1414" />
-                <option name="hostPort" value="1414" />
-              </DockerPortBindingImpl>
-            </list>
-          </option>
-          <option name="commandLineOptions" value="--network internal" />
-          <option name="sourceFilePath" value="admin-server/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="eureka-server" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="imageTag" value="eureka-server:latest" />
-          <option name="containerName" value="eureka-server" />
-          <option name="envVars">
-            <list>
-              <DockerEnvVarImpl>
-                <option name="name" value="EUREKA_CLIENT_FETCH-REGISTRY" />
-                <option name="value" value="false" />
-              </DockerEnvVarImpl>
-              <DockerEnvVarImpl>
-                <option name="name" value="EUREKA_CLIENT_REGISTER-WITH-EUREKA" />
-                <option name="value" value="false" />
-              </DockerEnvVarImpl>
-              <DockerEnvVarImpl>
-                <option name="name" value="SERVER_PORT" />
-                <option name="value" value="8761" />
-              </DockerEnvVarImpl>
-              <DockerEnvVarImpl>
-                <option name="name" value="SPRING_APPLICATION_NAME" />
-                <option name="value" value="eureka-server" />
-              </DockerEnvVarImpl>
-            </list>
-          </option>
-          <option name="portBindings">
-            <list>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="8761" />
-                <option name="hostPort" value="8761" />
-              </DockerPortBindingImpl>
-            </list>
-          </option>
-          <option name="commandLineOptions" value="--network internal" />
-          <option name="sourceFilePath" value="eureka-server/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration name="user-service-db" type="docker-deploy" factoryName="docker-image" server-name="Docker">
       <deployment type="docker-image">
         <settings>
@@ -240,8 +156,8 @@
     <configuration name="user-service" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
-          <option name="imageTag" value="userservice:latest" />
-          <option name="containerName" value="userservice" />
+          <option name="imageTag" value="user-service" />
+          <option name="containerName" value="user-service" />
           <option name="envVars">
             <list>
               <DockerEnvVarImpl>
@@ -266,20 +182,23 @@
               </DockerEnvVarImpl>
             </list>
           </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="4000" />
+                <option name="hostPort" value="4000" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
           <option name="commandLineOptions" value="--network internal" />
-          <option name="sourceFilePath" value="UserService/Dockerfile" />
+          <option name="sourceFilePath" value="user-service/Dockerfile" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.user-service" />
-      <item itemvalue="Docker.admin-server" />
-      <item itemvalue="Docker.eureka-server" />
       <item itemvalue="Docker.user-service-db" />
-      <item itemvalue="Spring Boot.AdminServerApplication" />
-      <item itemvalue="Spring Boot.EurekaServerApplication" />
-      <item itemvalue="Spring Boot.UserServiceApplication" />
+      <item itemvalue="Docker.user-service" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -297,7 +216,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1764066441681</updated>
-      <workItem from="1764066443120" duration="9705000" />
+      <workItem from="1764066443120" duration="13786000" />
+      <workItem from="1764080457903" duration="3000" />
+      <workItem from="1764088166301" duration="2736000" />
     </task>
     <servers />
   </component>

@@ -1,9 +1,13 @@
 package org.paymentwallet.userservice.dto;
 
+import jakarta.persistence.Column;
 import lombok.*;
 import org.paymentwallet.userservice.enums.KYCSTATUS;
 import org.paymentwallet.userservice.enums.Role;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Setter
@@ -20,4 +24,6 @@ public class UserResponseDto {
     private String lastName;
     private Role role;
     private KYCSTATUS kycstatus;
+    protected LocalDateTime createdAt;
+    protected LocalDateTime updatedAt;
 }

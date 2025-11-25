@@ -12,11 +12,11 @@ import java.util.Map;
 @RestControllerAdvice
 public class GobalExpection {
 
-    @ExceptionHandler(UserAlreadyExistException.class)
-    public ResponseEntity<Map<String , String>> userAlreadyExistException(UserAlreadyExistException ex ){
-        log.warn("The user is already exist {}" , ex.getMessage());
+    @ExceptionHandler(UserNotFoundException.class)
+    public ResponseEntity<Map<String , String>> userNotFoundException(UserNotFoundException ex ){
+        log.warn("The User doest not exist {}" , ex.getMessage());
         Map<String , String > errors = new HashMap<>();
-        errors.put("message" , " User already exist");
+        errors.put("message" , " User not exist");
         return ResponseEntity.badRequest().body(errors);
     }
 

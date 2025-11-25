@@ -6,14 +6,13 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 import org.paymentwallet.userservice.enums.Role;
-import org.paymentwallet.userservice.model.BaseModel;
 
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserRequestDto extends BaseModel {
+public class UserRequestDto {
 
     @Email(message = "Enter a valid Email address")
     @NotBlank(message = "Email should Not be Empty")
